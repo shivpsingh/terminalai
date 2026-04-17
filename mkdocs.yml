@@ -1,0 +1,36 @@
+site_name: Aegis Code
+site_description: Architecture-first local coding assistant harness
+repo_name: shivpsingh/terminalai
+repo_url: https://github.com/shivpsingh/terminalai
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Subsystem Map: architecture/subsystem-map.md
+      - Data Flow: architecture/data-flow.md
+      - Agent Lifecycle: architecture/agent-lifecycle.md
+      - Context Compiler: architecture/context-compiler.md
+      - Policy Model: architecture/policy-model.md
+      - Failure Recovery: architecture/failure-recovery.md
+      - Observability: architecture/observability.md
+      - Roadmap: architecture/roadmap.md
+  - ADR:
+      - 0001 Modular Monolith: adr/0001-modular-monolith.md
+      - 0002 Local First: adr/0002-local-first.md
+      - 0003 SQLite for MVP: adr/0003-sqlite-for-mvp.md
+      - 0004 Tool Interface: adr/0004-tool-interface.md
+      - 0005 Context Compiler: adr/0005-context-compiler.md
+  - Tutorials:
+      - Getting Started: tutorials/getting-started.md
+      - How a Run Works: tutorials/how-a-run-works.md
+      - Adding a Tool: tutorials/adding-a-tool.md
+      - Adding a Model Adapter: tutorials/adding-a-model-adapter.md
+      - Adding a Policy Rule: tutorials/adding-a-policy-rule.md
+  - Reference:
+      - CLI: reference/cli.md
+      - Config: reference/config.md
+      - Events: reference/events.md
+      - Database: reference/database.md
+      - Interfaces: reference/interfaces.md

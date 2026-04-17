@@ -1,3 +1,21 @@
+Metadata-Version: 2.4
+Name: aegis-code
+Version: 0.1.0
+Summary: Aegis Code: terminal-first, local-first AI coding assistant harness
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.12.0
+Requires-Dist: pydantic>=2.7.0
+Requires-Dist: pydantic-settings>=2.3.0
+Requires-Dist: structlog>=24.1.0
+Requires-Dist: sqlalchemy>=2.0.30
+Provides-Extra: dev
+Requires-Dist: pytest>=8.2.0; extra == "dev"
+Requires-Dist: ruff>=0.5.0; extra == "dev"
+Requires-Dist: mypy>=1.10.0; extra == "dev"
+Requires-Dist: mkdocs>=1.6.0; extra == "dev"
+Requires-Dist: mkdocs-material>=9.5.0; extra == "dev"
+
 # Aegis Code
 
 Aegis Code is a **terminal-first, local-first AI coding assistant harness** built in Python.
