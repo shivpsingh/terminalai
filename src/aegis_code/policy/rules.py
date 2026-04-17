@@ -8,4 +8,8 @@ def within_workspace(path: str, workspace_root: str) -> bool:
 
     root = Path(workspace_root).resolve()
     target = Path(path).resolve()
-    return str(target).startswith(str(root))
+    try:
+        target.relative_to(root)
+        return True
+    except ValueError:
+        return False

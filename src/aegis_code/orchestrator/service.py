@@ -95,23 +95,23 @@ class RunRepository(Protocol):
     """Run persistence contract."""
 
     def create_run(self, run: AgentRun) -> None:
-        raise NotImplementedError
+        ...
 
     def update_run(self, run: AgentRun) -> None:
-        raise NotImplementedError
+        ...
 
     def get_run(self, run_id: str) -> AgentRun:
-        raise NotImplementedError
+        ...
 
     def save_plan_steps(self, run_id: str, steps: list[PlanStep]) -> None:
-        raise NotImplementedError
+        ...
 
 
 class EventRepository(Protocol):
     """Event persistence contract."""
 
     def add_event(self, event: RunEvent) -> None:
-        raise NotImplementedError
+        ...
 
     def list_events(self, run_id: str) -> list[RunEvent]:
-        raise NotImplementedError
+        ...

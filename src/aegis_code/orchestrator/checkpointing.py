@@ -1,5 +1,7 @@
 """Checkpoint save/load behavior."""
 
+from typing import Protocol
+
 from aegis_code.domain.enums import RunPhase
 from aegis_code.domain.ids import new_checkpoint_id
 from aegis_code.domain.models import Checkpoint
@@ -24,11 +26,11 @@ class CheckpointStore:
         return self.repo.load_latest_checkpoint(run_id)
 
 
-class CheckpointRepository:
+class CheckpointRepository(Protocol):
     """Protocol-like interface for checkpoint persistence."""
 
     def save_checkpoint(self, checkpoint: Checkpoint) -> None:
-        raise NotImplementedError
+        ...
 
     def load_latest_checkpoint(self, run_id: str) -> Checkpoint | None:
-        raise NotImplementedError
+        ...

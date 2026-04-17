@@ -165,4 +165,5 @@ class SqliteCheckpointRepository(CheckpointRepository):
                 run_id=row.run_id,
                 phase=RunPhase(row.phase),
                 data=row.data,
+                created_at=row.created_at,
             )

@@ -49,4 +49,4 @@ class EventRepository(Protocol):
     """Event repository contract."""
 
     def add_event(self, event: RunEvent) -> None:
-        raise NotImplementedError
+        ...
